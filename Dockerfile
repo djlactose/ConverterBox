@@ -1,13 +1,14 @@
-FROM node:11-alpine
+FROM node:alpine
 
-ADD upload.js /mnt/upload.js
+EXPOSE 80
+
+ADD main.js /mnt/main.js
+ADD converter.js /mnt/converter.js
 
 WORKDIR /mnt
 
-RUN apk add ffmpeg && \
-npm install fs && \
-npm install formidable && \
-mkdir /mnt/in && \
-mkdir /mnt/out
+RUN apk add ffmpeg
 
-#ENTRYPOINT node /mnt/upload.js
+WORKDIR /mnt
+
+#ENTRYPOINT node /mnt/main.js

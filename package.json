@@ -1,0 +1,22 @@
+{
+  "name": "mnt",
+  "version": "1.0.0",
+  "description": "This is a container which will convert different types of media into other formats.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djlactose/ConverterBox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djlactose/ConverterBox/issues"
+  },
+  "homepage": "https://github.com/djlactose/ConverterBox#readme",
+  "dependencies": {
+    "formidable": "^1.2.1"
+  }
+}
